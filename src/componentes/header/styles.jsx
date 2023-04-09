@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 150px;
-  width: 100%;
   text-align: center;
   background: teal;
 `;
