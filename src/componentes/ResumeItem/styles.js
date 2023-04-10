@@ -9,7 +9,7 @@ export const Container = styled.div`
   padding: .5rem 1.5rem;
   width: 30%;
   height: 6.5rem;
-  box-shadow: inset 0rem .0rem .2rem #000,inset 0rem .0rem .3rem #000;
+  box-shadow: 0rem .0rem .2rem #000;
 
   @media (max-width: 75.0rem) {
     width: 20%;

@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "./componentes/header"; 
 import GlobalStyle from "./styles/global"; 
 import Resume from "./componentes/Resume";

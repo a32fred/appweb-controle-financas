@@ -61,7 +61,6 @@ export const Button = styled.button`
   border-radius: .5rem;
   cursor: pointer;
   color: white;
-  background-color: #F3DEBA;
+  background-color: teal;
   box-shadow: inset -.0rem -.1rem 0.2rem #000;
-  text-shadow:.1rem .0rem .1rem #000,.1rem .0rem .1rem #000 ;
 `;
