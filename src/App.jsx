@@ -20,7 +20,7 @@ const App = () => {
       .map((transation) => Number(transation.amount));
 
     const amountIncome = transactionsList
-      .filter((item) => item.expense)
+      .filter((item) => !item.expense)
       .map((transation) => Number(transation.amount));
 
     const expense = amountExpense.reduce((acc, curr) => acc + curr, 0).toFixed(2);
@@ -39,8 +39,7 @@ const App = () => {
 
     setTransactionsList(newArrayTransactions);
 
-    localStorage.setItem("transactions", JASON.stringify(newArrayTransactions));
-
+    localStorage.setItem("transactions", JSON.stringify(newArrayTransactions));
   };
 
   return (

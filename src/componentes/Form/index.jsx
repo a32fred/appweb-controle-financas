@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import * as C from "./styles";
-import Grid from "../Grid";
+import { Grid } from "../Grid"
 
 const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
   const [desc, setDesc] = useState("");
@@ -53,7 +53,7 @@ const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
             onChange={() => setExpense(!isExpense)}
           />
           <span />
-          <C.Label htmlFor="rIncome" class="labelchek">Entrada</C.Label>
+          <C.Label htmlFor="rIncome" className="labelchek">Entrada</C.Label>
           <C.Input
             type="radio"
             id="rExpenses"
@@ -61,7 +61,7 @@ const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
             onChange={() => setExpense(!isExpense)}
           />
           <span />
-          <C.Label htmlFor="rExpenses" class="labelchek">Saída</C.Label>
+          <C.Label htmlFor="rExpenses" className="labelchek">Saída</C.Label>
         </C.RadioGroup>
         <C.Button onClick={handleSave}>ADICIONAR</C.Button>
       </C.Container>

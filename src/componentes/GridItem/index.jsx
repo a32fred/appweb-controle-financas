@@ -1,25 +1,21 @@
 import React from "react";
 import * as C from "./styles";
-import {
-    FaRegArrowSaltCircleUP,
-    FaRegArrowSaltCircleDown,
-    FaTrash,
-} from "react-icons/fc";
+import {FaTrash} from "react-icons/fa";
 
 const GridItem = ({ item, onDelete }) => {
-    retunr(
+    return(
         <C.Tr>
             <C.Td>{item.desc}</C.Td>
             <C.Td>{item.amount}</C.Td>
             <C.Td alignCenter>
                 {item.expense ? (
-                    <FaRegArrowSaltCircleDown color="red" />
+                    <p style={{color: 'red'}}>saida</p>
                 ) : (
-                    <FaRegArrowSaltCircleUP color="green" />
+                    <p style={{color: 'green'}}>entrada</p>
                 )}
             </C.Td>
             <C.Td alignCenter>
-                <FaTrash onclick={() => onDelete(item.id)} />
+                <FaTrash style={{cursor: "pointer"}} onClick={() => onDelete(item.id)} />
             </C.Td>
         </C.Tr>
     )
